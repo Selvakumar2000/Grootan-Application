@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ADMIN LOGIN</title>
+	<link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+	<section>
+			<div class="container">
+				<div class="login_form">
+					<h1>Welcome</h1>
+					<form action="login_php.php" method="POST">
+ 
+						<label>USER NAME</label>
+						
+						<input type="text" name="lemail" required="" placeholder="UserName" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"/>
+						
+						<br>
+						<label>PASSWORD</label>
+						<input type="password" name="lpassword" required="" placeholder="PassWord" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+						<input type="submit" name="" value="SUBMIT">
+						<br/>
+						<label>-----------------------or----------------------</label>
+						<br/><br/>
+						<input type="button" value="create a new account" onclick="location.href='register.html';"></button>
+						<!--<button type="submit" onclick="location.href='register.html';">create a new account</button>-->
+					</form>
+				</div>
+			</div>
+
+	</section>
+
+</body>
+</html>
